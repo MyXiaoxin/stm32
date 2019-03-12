@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.myxi.MainActivity">
+
+
+    <EditText
+        android:id="@+id/canshu1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/canshu2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/canshu1"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/canshu2"
+        android:layout_marginTop="15dp"
+        android:text="tijiao"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智能控制端"
+        android:layout_below="@+id/canshu1"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="88dp" />
+
+    <Button
+        android:id="@+id/button_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="217dp"
+        android:background="@drawable/button_shape"
+        android:text="显示位置信息"
+        android:textColor="@color/button_color"
+        android:layout_below="@+id/canshu1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button_show"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_shape"
+        android:text="开始运行"
+        android:textColor="@color/button_color" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_start"
+        android:layout_alignBottom="@+id/button_show"
+        android:layout_marginStart="62dp"
+        android:layout_toEndOf="@+id/button_start"
+        android:background="@drawable/button_shape"
+        android:text="停止运行"
+        android:textColor="@color/button_color" />
+
+
+</RelativeLayout>
